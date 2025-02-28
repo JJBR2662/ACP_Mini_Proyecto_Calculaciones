@@ -1,0 +1,5 @@
+﻿  ACP.cpp
+D:\Mini_Proyecto_ACP_LengProgra\ACP.cpp(25,11): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'int', possible loss of data
+D:\Mini_Proyecto_ACP_LengProgra\ACP.cpp(26,11): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'int', possible loss of data
+D:\Mini_Proyecto_ACP_LengProgra\ACP.cpp(57,11): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'int', possible loss of data
+  Mini_Proyecto_ACP_LengProgra.vcxproj -> D:\Mini_Proyecto_ACP_LengProgra\x64\Debug\Mini_Proyecto_ACP_LengProgra.exe
