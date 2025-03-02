@@ -11,10 +11,10 @@ void ACP::calcularACP() {
     // Descomposición en valores propios
     Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> solver(R);
 
-    // 🔹 Guardamos los valores propios en la variable de la clase
+    // se guarda los valores propios en la variable de la clase
     valoresPropios = solver.eigenvalues().reverse();
 
-    // 🔹 Guardamos los vectores propios
+    // guarda los vectores propios
     V = solver.eigenvectors().rowwise().reverse();
 
     // Matriz de componentes principales
@@ -27,17 +27,17 @@ void ACP::calcularMatrizCalidadIndividuos() {
 
     Q = Eigen::MatrixXd(n, m);
 
-    // Calcular el denominador para cada individuo (suma de cuadrados de X)
+    // Calcular el denominador para cada uno 
     Eigen::VectorXd denominador = X.array().square().rowwise().sum();
 
     // Evitar división por cero
     for (int i = 0; i < n; ++i) {
         if (denominador(i) == 0) {
-            denominador(i) = 1e-8;  // Pequeño valor para evitar división por cero
+            denominador(i) = 1e-8;
         }
     }
 
-    // Calcular Q usando la fórmula
+    // Calcular Q 
     for (int i = 0; i < n; ++i) {
         for (int r = 0; r < m; ++r) {
             Q(i, r) = std::pow(C(i, r), 2) / denominador(i);
@@ -56,10 +56,9 @@ void ACP::calcularMatrizCalidadVariables() {
 void ACP::calcularVectorInercias() {
     int m = X.cols();  // Número de variables
 
-    // Asegurar que I sea un vector fila de tamaño 1xm
+    // condicional para que I sea un vector fila de tamaño 1xm
     I = Eigen::RowVectorXd(m);
 
-    // Calcular el vector de inercias usando la fórmula correcta
     for (int j = 0; j < m; ++j) {
         I(j) = 100.0 * valoresPropios(j) / m;
     }

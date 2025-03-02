@@ -1,2 +1,5 @@
-﻿  Mini_Proyecto_ACP_LengProgra.cpp
+﻿  ACP.cpp
+C:\Users\SURFACEB2I7\Desktop\Lenguajes\ACP_Mini_Proyecto_Calculaciones\ACP.cpp(25,11): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'int', possible loss of data
+C:\Users\SURFACEB2I7\Desktop\Lenguajes\ACP_Mini_Proyecto_Calculaciones\ACP.cpp(26,11): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'int', possible loss of data
+C:\Users\SURFACEB2I7\Desktop\Lenguajes\ACP_Mini_Proyecto_Calculaciones\ACP.cpp(57,11): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'int', possible loss of data
   Mini_Proyecto_ACP_LengProgra.vcxproj -> C:\Users\SURFACEB2I7\Desktop\Lenguajes\ACP_Mini_Proyecto_Calculaciones\x64\Debug\Mini_Proyecto_ACP_LengProgra.exe
